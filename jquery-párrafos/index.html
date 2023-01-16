@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery parrafos</title>
+</head>
+
+<body>
+    <div>
+        <p id="p1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam natus numquam incidunt impedit nemo
+            aliquam, eos aliquid, deserunt ratione tenetur dignissimos accusamus aperiam vitae consectetur doloremque
+            quaerat error placeat omnis.
+        </p>
+    </div>
+
+    <p id="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ea itaque deserunt voluptatum, laborum impedit
+        sequi enim ipsa nulla asperiores beatae iure ratione recusandae aliquid cumque, doloremque praesentium culpa
+        ipsum.
+    </p>
+
+    <p class="p3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, non commodi amet, temporibus laudantium
+        voluptatibus delectus numquam beatae quisquam impedit quod quis maiores repudiandae sunt dignissimos, aut dolor
+        corrupti tenetur?
+    </p>
+
+    <script>
+
+        $("div > p").css("color", "red");
+
+        $(document).ready(function () {
+            $("#p2").click(function (event) {
+                alert("Este es el segundo párrafo");
+            });
+
+            $(".p3").dblclick(function (event) {
+                $(".p3").css("display", "none");
+            });
+        });
+    </script>
+</body>
+
+</html>
